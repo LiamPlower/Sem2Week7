@@ -1,10 +1,11 @@
 package ie.atu.week7solution.model;
 
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.time.LocalDate;
 
 @Data
 @Builder
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 
-public class ReservationModel {
+public class Reservation {
 
     private Long reservationId;
 
@@ -32,6 +33,7 @@ public class ReservationModel {
 
     @Min(value = 1, message = "durationHours must be between 1 and 24")
     @Max(value = 24, message = "durationHours must be between 1 and 24")
+    private int durationHours;
 
 
 }
