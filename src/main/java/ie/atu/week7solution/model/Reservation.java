@@ -36,4 +36,9 @@ public class Reservation {
     private int durationHours;
 
 
+    public void setReservationID(long l) {
+    }
+
+    public int getDurationHour() {
+    }
 }
